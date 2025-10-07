@@ -1,8 +1,313 @@
 {
   "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+    {
+  "provider": {
+    "provider_id": "prov-pparts-01",
+    "name": "Precision Parts Indústria Ltda",
+    "tax_id": "12.345.678/0001-90",
+    "location": {
+      "address": "Av. das Indústrias, 1000",
+      "city": "Campinas",
+      "state": "SP",
+      "country": "BR",
+      "geolocation": { "lat": -22.9056, "lon": -47.0608 }
+    },
+    "contact": {
+      "email": "ops@precisionparts.example.com",
+      "phone": "+55-19-3000-2000"
+    },
+    "certifications": [
+      { "standard": "ISO 9001", "valid_until": "2026-12-31" },
+      { "standard": "IATF 16949", "valid_until": "2026-06-30" }
+    ],
+    "production_lines": [
+      {
+        "line_id": "PP-PL-01",
+        "model": "Press-2000",
+        "shift": "morning",
+        "supervisor": "Mariana Silva",
+        "status": "operational",
+        "oee_percent": 87.4,
+        "parts_produced": [
+          {
+            "part_id": "PP-BP-1001",
+            "sku": "BP-1001",
+            "description": "Brake Pad - Standard",
+            "material": "Composite",
+            "units_per_cycle": 4,
+            "current_batch": {
+              "batch_id": "BATCH-20251007-0001",
+              "start_time": "2025-10-07T06:30:00-04:00",
+              "end_time": "2025-10-07T10:45:00-04:00",
+              "quantity_produced": 480,
+              "scrap_units": 6,
+              "unit_cost_usd": 2.45,
+              "traceability": [
+                { "event": "raw_material_received", "timestamp": "2025-10-05T14:12:00-04:00", "supplier_lot": "RM-5567" },
+                { "event": "assembly_started", "timestamp": "2025-10-07T06:30:05-04:00", "operator": "OP-198" },
+                { "event": "assembly_completed", "timestamp": "2025-10-07T10:44:50-04:00" }
+              ],
+              "quality_checks": [
+                {
+                  "qc_id": "QC-PP-0001",
+                  "timestamp": "2025-10-07T07:15:00-04:00",
+                  "inspector": "Carlos M.",
+                  "inspection_type": "dimensional",
+                  "samples_tested": 10,
+                  "defects_found": 0,
+                  "result": "pass",
+                  "measurements": {
+                    "thickness_mm": { "avg": 12.03, "tolerance_mm": 0.05 },
+                    "width_mm": { "avg": 85.0, "tolerance_mm": 0.2 }
+                  },
+                  "attachments": [ "urn:dataspace:asset:qc-photo-0001" }
+                },
+                {
+                  "qc_id": "QC-PP-0002",
+                  "timestamp": "2025-10-07T10:30:00-04:00",
+                  "inspector": "Lina R.",
+                  "inspection_type": "adhesion",
+                  "samples_tested": 5,
+                  "defects_found": 1,
+                  "result": "conditional",
+                  "notes": "1 amostra com adesão abaixo do limite; segregada para retrabalho"
+                }
+              ],
+              "environmental": {
+                "energy_kwh": 125.6,
+                "co2_emissions_kg": 34.8,
+                "water_liters": 220.0
+              },
+              "edc_asset_metadata": {
+                "asset_id": "asset-pparts-01-bp-1001-batch-20251007-0001",
+                "policy_id": "policy-pparts-01-quality-read",
+                "contract_definition_id": "cd-pparts-01-batch-0001",
+                "access_rights": "read_only",
+                "contenttype": "application/json",
+                "last_updated": "2025-10-07T11:00:00-04:00"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "line_id": "PP-PL-02",
+        "model": "CNC-400",
+        "shift": "evening",
+        "supervisor": "João Pereira",
+        "status": "maintenance",
+        "maintenance_notes": "Troca preventiva de spindle e recalibração de eixos",
+        "planned_return": "2025-10-09"
+      }
+    ],
+    "inventory": {
+      "raw_materials": [
+        { "name": "Friction Composite", "lot": "RM-5567", "quantity_kg": 1200, "received": "2025-10-05" }
+      ],
+      "finished_goods": [
+        { "part_id": "PP-BP-1001", "available_units": 1200, "warehouse_location": "WH-A1" }
+      ]
+    },
+    "sustainability": {
+      "monthly_energy_kwh": 18250,
+      "monthly_co2_kg": 5050,
+      "renewable_share_percent": 42.0
+    },
+    "edc_provider_metadata": {
+      "participant_id": "did:web:precisionparts.example.com",
+      "catalog_asset_count": 1,
+      "data_retention_days": 180,
+      "support_contact": "dataspace-support@precisionparts.example.com"
+    },
+
+    "realtime": {
+      "timestamp": "2025-10-07T10:20:30-04:00",
+      "line_status": [
+        {
+          "line_id": "PP-PL-01",
+          "state": "running",
+          "current_part": "PP-BP-1001",
+          "throughput_units_per_min": 28,
+          "cycle_time_sec": 8.4,
+          "takt_time_sec": 9.0,
+          "oee_percent_live": 88.9,
+          "scrap_rate_percent_live": 1.1,
+          "wip_units": 62,
+          "downtime_reason": null,
+          "sensors": {
+            "temperature_c": 31.4,
+            "humidity_percent": 52.0,
+            "vibration_rms_mm_s": 2.1,
+            "press_force_kN": 195.0
+          },
+          "spc": {
+            "metric": "thickness_mm",
+            "ucl": 12.10,
+            "lcl": 11.90,
+            "last_sample": 12.02,
+            "rule_violations": false
+          },
+          "predicted_quality_risk_percent": 3.2
+        },
+        {
+          "line_id": "PP-PL-02",
+          "state": "maintenance",
+          "current_part": null,
+          "throughput_units_per_min": 0,
+          "cycle_time_sec": null,
+          "takt_time_sec": null,
+          "oee_percent_live": null,
+          "scrap_rate_percent_live": null,
+          "wip_units": 0,
+          "downtime_reason": "preventive_maintenance"
+        }
+      ],
+      "inventory_live": {
+        "finished_goods": {
+          "PP-BP-1001": {
+            "available_units": 1200,
+            "reserved_units": 300,
+            "safety_stock_units": 800,
+            "reorder_point_units": 900,
+            "days_of_supply": 2.4
+          }
+        },
+        "raw_materials": {
+          "Friction Composite": {
+            "quantity_kg": 1040,
+            "consumption_rate_kg_per_hr": 42.0,
+            "coverage_hours": 24.8
+          }
+        }
+      },
+      "alerts": [
+        {
+          "id": "AL-PP-001",
+          "severity": "medium",
+          "category": "quality",
+          "message": "Tendência de aumento de variação em thickness_mm (Z-score 1.9)",
+          "detected_at": "2025-10-07T10:18:05-04:00",
+          "recommended_action": "Aumentar frequência de amostragem para 1/30min e revisar setup do molde"
+        }
+      ]
+    },
+
+    "delivery_and_logistics": {
+      "asn_list": [
+        {
+          "asn_id": "ASN-20251007-041",
+          "ship_from": "WH-A1",
+          "ship_to": "AutoMaker-PLANT-TAUBATE",
+          "carrier": "FastLog BR",
+          "vehicle_type": "truck_3_4",
+          "dispatched_at": "2025-10-07T09:45:00-04:00",
+          "eta": "2025-10-07T16:00:00-04:00",
+          "items": [
+            { "sku": "BP-1001", "description": "Brake Pad - Standard", "quantity_units": 600, "batch_ids": ["BATCH-20251007-0001"] }
+          ],
+          "packaging": { "pallets": 3, "boxes_per_pallet": 10, "units_per_box": 20 },
+          "tracking": { "gps_lat": -23.181, "gps_lon": -46.887, "last_update": "2025-10-07T10:19:40-04:00" },
+          "predicted_otif_percent": 96.5
+        }
+      ],
+      "lead_times_days": {
+        "standard": 3,
+        "expedited": 1
+      },
+      "capacity_commitments_weekly": {
+        "PP-BP-1001": { "committed_units": 12000, "peak_capacity_units": 16000, "available_to_promise_units": 3200 }
+      }
+    },
+
+    "kpis_for_oem": {
+      "otif_percent_30d": 98.2,
+      "ppm_12m": 120,
+      "avg_response_time_to_ecn_hours": 6.5,
+      "supplier_rating_score": 92,
+      "on_hand_coverage_days": 3.1
+    },
+
+    "compliance_and_change": {
+      "ppap": {
+        "level": 3,
+        "psw_status": "approved",
+        "ppap_last_update": "2025-09-18",
+        "documents_assets": [
+          "urn:dataspace:asset:ppap-dfmea-v3",
+          "urn:dataspace:asset:ppap-controlplan-v3",
+          "urn:dataspace:asset:ppap-msav3"
+        ]
+      },
+      "imds": { "submission_id": "IMDS-987654", "status": "accepted" },
+      "regulatory": { "rohs": true, "reach": true, "conflict_minerals": "CMRT-6.31-yes" },
+      "ecn_change_notices": [
+        {
+          "ecn_id": "ECN-2025-044",
+          "title": "Alteração do adesivo de fricção (fornecedor secundário)",
+          "effective_date": "2025-11-01",
+          "impact": "sem mudança dimensional; revisão de parâmetros de cura",
+          "status": "under_review"
+        }
+      ]
+    },
+
+    "forecasts_and_demand": {
+      "demand_forecast_weekly": [
+        { "week": "2025-W41", "BP-1001_units": 11800 },
+        { "week": "2025-W42", "BP-1001_units": 12150 },
+        { "week": "2025-W43", "BP-1001_units": 12500 }
+      ],
+      "capacity_risk_flag": false
+    },
+
+    "integration": {
+      "edc_endpoints": {
+        "catalog_endpoint": "urn:edc:provider:catalog:prov-pparts-01",
+        "data_plane_endpoint": "urn:edc:provider:dataplane:prov-pparts-01"
+      },
+      "webhooks": [
+        {
+          "topic": "quality.qc_result",
+          "event_schema": "urn:schema:qc_result:v1",
+          "delivery_mode": "push",
+          "sample_event": {
+            "event_id": "EVT-20251007-001",
+            "timestamp": "2025-10-07T10:20:25-04:00",
+            "asset_id": "asset-pparts-01-bp-1001-batch-20251007-0001",
+            "qc": { "metric": "thickness_mm", "value": 12.02, "ucl": 12.1, "lcl": 11.9, "result": "pass" }
+          }
+        },
+        {
+          "topic": "logistics.asn_status",
+          "event_schema": "urn:schema:asn_status:v1",
+          "delivery_mode": "push"
+        }
+      ],
+      "subscriptions_streaming": [
+        {
+          "protocol": "MQTT",
+          "broker": "mqtts://broker.dataspace.example.com",
+          "topic": "prov-pparts-01/PP-PL-01/telemetry",
+          "qos": 1,
+          "retained": false,
+          "message_rate_msgs_per_min": 60
+        },
+        {
+          "protocol": "Kafka",
+          "bootstrap": "kafka.dataspace.example.com:9092",
+          "topic": "qc_results_bp1001_v1",
+          "partitions": 3
+        }
+      ],
+      "slas": {
+        "data_freshness_seconds_max": 30,
+        "uptime_percent_monthly": 99.5,
+        "incident_response_time_minutes": 30
+      }
+    }
+  }
+}
+
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
