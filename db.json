@@ -1,203 +1,48 @@
 {
-   "provider":{
-      "provider_id":"prov-pparts-01",
-      "name":"Precision Parts Indústria Ltda",
-      "location":{
-         "city":"Campinas",
-         "state":"SP",
-         "country":"BR"
-      },
-      "contact":{
-         "email":"ops@precisionparts.example.com"
-      },
-      "production_lines":[
-         {
-            "line_id":"PP-PL-01",
-            "status":"operational",
-            "oee_percent":87.4,
-            "parts":[
-               {
-                  "part_id":"PP-BP-1001",
-                  "sku":"BP-1001",
-                  "desc":"Brake Pad - Standard",
-                  "current_batch":{
-                     "batch_id":"BATCH-20251007-0001",
-                     "start":"2025-10-07T06:30:00-04:00",
-                     "end":"2025-10-07T10:45:00-04:00",
-                     "qty":480,
-                     "scrap":6,
-                     "qc":{
-                        "last_result":"pass",
-                        "defects":0
-                     },
-                     "env":{
-                        "energy_kwh":125.6,
-                        "co2_kg":34.8
-                     },
-                     "edc_asset":{
-                        "asset_id":"asset-pparts-01-bp-1001-batch-20251007-0001",
-                        "policy_id":"policy-pparts-01-quality-read",
-                        "contract_definition_id":"cd-pparts-01-batch-0001",
-                        "last_updated":"2025-10-07T11:00:00-04:00"
-                     }
-                  }
-               }
-            ]
-         }
-      ],
-      "realtime":{
-         "ts":"2025-10-07T10:20:30-04:00",
-         "line_status":[
-            {
-               "line_id":"PP-PL-01",
-               "state":"running",
-               "current_part":"PP-BP-1001",
-               "throughput_upm":28,
-               "cycle_time_s":8.4,
-               "takt_s":9,
-               "oee_live":88.9,
-               "scrap_live_pct":1.1,
-               "wip":62,
-               "sensors":{
-                  "temp_c":31.4,
-                  "hum_pct":52,
-                  "vibration_rms":2.1,
-                  "press_kN":195
-               },
-               "spc":{
-                  "metric":"thickness_mm",
-                  "ucl":12.1,
-                  "lcl":11.9,
-                  "last":12.02,
-                  "violation":false
-               },
-               "pred_quality_risk_pct":3.2
-            }
-         ],
-         "inventory_live":{
-            "finished_goods":{
-               "BP-1001":{
-                  "available":1200,
-                  "reserved":300,
-                  "safety":800,
-                  "reorder":900,
-                  "days_supply":2.4
-               }
-            },
-            "raw_materials":{
-               "Friction Composite":{
-                  "qty_kg":1040,
-                  "consumption_kg_h":42,
-                  "coverage_h":24.8
-               }
-            }
-         },
-         "alerts":[
-            {
-               "id":"AL-PP-001",
-               "severity":"medium",
-               "category":"quality",
-               "msg":"Tendência de aumento de variação em thickness_mm",
-               "at":"2025-10-07T10:18:05-04:00",
-               "action":"Aumentar frequência de amostragem e revisar setup"
-            }
-         ]
-      },
-      "delivery":{
-         "asn":[
-            {
-               "asn_id":"ASN-20251007-041",
-               "ship_from":"WH-A1",
-               "ship_to":"AutoMaker-PLANT-TAUBATE",
-               "eta":"2025-10-07T16:00:00-04:00",
-               "items":[
-                  {
-                     "sku":"BP-1001",
-                     "qty":600,
-                     "batches":[
-                        "BATCH-20251007-0001"
-                     ]
-                  }
-               ],
-               "tracking":{
-                  "lat":-23.181,
-                  "lon":-46.887,
-                  "last":"2025-10-07T10:19:40-04:00"
-               },
-               "otif_pred_pct":96.5
-            }
-         ],
-         "lead_time_days":{
-            "standard":3,
-            "expedited":1
-         },
-         "capacity_commitments":{
-            "BP-1001":{
-               "committed":12000,
-               "peak":16000,
-               "atp":3200
-            }
-         }
-      },
-      "kpis_for_oem":{
-         "otif_30d_pct":98.2,
-         "ppm_12m":120,
-         "ecn_response_h":6.5,
-         "supplier_rating":92
-      },
-      "compliance":{
-         "ppap":{
-            "level":3,
-            "psw":"approved"
-         },
-         "imds":{
-            "id":"IMDS-987654",
-            "status":"accepted"
-         },
-         "regulatory":{
-            "rohs":true,
-            "reach":true
-         }
-      },
-      "forecasts":{
-         "weekly":[
-            {
-               "week":"2025-W41",
-               "BP-1001":11800
-            },
-            {
-               "week":"2025-W42",
-               "BP-1001":12150
-            },
-            {
-               "week":"2025-W43",
-               "BP-1001":12500
-            }
-         ],
-         "capacity_risk":false
-      },
-      "integration":{
-         "edc":{
-            "catalog":"urn:edc:provider:catalog:prov-pparts-01",
-            "dataplane":"urn:edc:provider:dataplane:prov-pparts-01"
-         },
-         "webhooks":[
-            {
-               "topic":"quality.qc_result",
-               "schema":"urn:schema:qc_result:v1"
-            }
-         ],
-         "subscriptions":[
-            {
-               "protocol":"MQTT",
-               "topic":"prov-pparts-01/PP-PL-01/telemetry",
-               "rate_mpm":60
-            }
-         ],
-         "sla":{
-            "freshness_s_max":30,
-            "uptime_pct":99.5
-         }
-      }
-   }
+   {
+    "batchId": "BT-2025-11-03-742",
+    "component": "piston-pin",
+    "supplierPartId": "PP-223-A",
+    "productionDate": "2025-11-03T10:42:00Z",
+    "plant": "PLANT-02",
+    "measurements": {
+      "torqueNm": 57.4,
+      "diameterMm": 17.995,
+      "surfacePorosityPct": 0.023,
+      "temperatureC": 437
+    },
+    "operatorId": "OP-991",
+    "qcPass": true
+  },
+   {
+    "batchId": "BT-2025-11-03-743",
+    "component": "piston-pin",
+    "supplierPartId": "PP-223-A",
+    "productionDate": "2025-11-03T11:16:00Z",
+    "plant": "PLANT-02",
+    "measurements": {
+      "torqueNm": 59.0,
+      "diameterMm": 18.000,
+      "surfacePorosityPct": 0.027,
+      "temperatureC": 445
+    },
+    "operatorId": "OP-1003",
+    "qcPass": false,
+    "qcNotes": "torque acima do limite interno"
+  },
+  {
+    "batchId": "BT-2025-11-03-744",
+    "component": "piston-pin",
+    "supplierPartId": "PP-223-A",
+    "productionDate": "2025-11-03T12:08:00Z",
+    "plant": "PLANT-02",
+    "measurements": {
+      "torqueNm": 55.8,
+      "diameterMm": 17.998,
+      "surfacePorosityPct": 0.018,
+      "temperatureC": 432
+    },
+    "operatorId": "OP-1003",
+    "qcPass": true
+  }
 }
