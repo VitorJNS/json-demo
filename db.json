@@ -1,26 +1,29 @@
 {
-  "batchId": "PISTAO-01",
-  "component": "piston-pin",
-  "supplierPartId": "PP-223-A",
-  "productionDate": "2025-11-03T10:42:00Z",
-  "plant": "PLANT-02",
-  "measurements": {
-    "torqueNm": 57.4,
-    "diameterMm": 17.995,
-    "surfacePorosityPct": 0.023,
-    "temperatureC": 437
-  },
-  "operatorId": "OP-991",
-  "qcPass": true,
-  "nextBatches": {
-    "PISTAO-02": {
+  "batches": [
+    {
+      "batchId": "PISTAO-01",
+      "component": "piston-pin",
+      "supplierPartId": "PP-223-A",
+      "productionDate": "2025-11-03T10:42:00Z",
+      "plant": "PLANT-02",
+      "measurements": {
+        "torqueNm": 57.4,
+        "diameterMm": 17.995,
+        "surfacePorosityPct": 0.023,
+        "temperatureC": 437
+      },
+      "operatorId": "OP-991",
+      "qcPass": true
+    },
+    {
+      "batchId": "PISTAO-02",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
       "productionDate": "2025-11-03T11:16:00Z",
       "plant": "PLANT-02",
       "measurements": {
         "torqueNm": 59.0,
-        "diameterMm": 18.000,
+        "diameterMm": 18.0,
         "surfacePorosityPct": 0.027,
         "temperatureC": 445
       },
@@ -28,7 +31,8 @@
       "qcPass": false,
       "qcNotes": "torque acima do limite interno"
     },
-    "PISTAO-03": {
+    {
+      "batchId": "PISTAO-03",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
       "productionDate": "2025-11-03T12:08:00Z",
@@ -42,7 +46,8 @@
       "operatorId": "OP-1003",
       "qcPass": true
     },
-    "PISTAO-04": {
+    {
+      "batchId": "PISTAO-04",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
       "productionDate": "2025-11-03T12:44:00Z",
@@ -50,13 +55,14 @@
       "measurements": {
         "torqueNm": 56.9,
         "diameterMm": 17.994,
-        "surfacePorosityPct": 0.020,
+        "surfacePorosityPct": 0.02,
         "temperatureC": 439
       },
       "operatorId": "OP-1005",
       "qcPass": true
     },
-    "PISTAO-05": {
+    {
+      "batchId": "PISTAO-05",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
       "productionDate": "2025-11-03T13:25:00Z",
@@ -71,7 +77,8 @@
       "qcPass": false,
       "qcNotes": "torque elevado acima do padrão"
     },
-    "PISTAO-06": {
+    {
+      "batchId": "PISTAO-06",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
       "productionDate": "2025-11-03T14:10:00Z",
@@ -85,5 +92,5 @@
       "operatorId": "OP-1007",
       "qcPass": true
     }
-  }
+  ]
 }
