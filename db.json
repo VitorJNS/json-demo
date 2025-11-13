@@ -1,96 +1,358 @@
 {
   "batches": [
     {
+      "id": 1,
       "batchId": "PISTAO-01",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
+      "productionOrder": "PO-8845-001",
       "productionDate": "2025-11-03T10:42:00Z",
       "plant": "PLANT-02",
+      "lineId": "LINE-02-A",
+      "machineId": "MC-PIN-07",
+      "shift": "A",
+      "customer": "OEM-ALPHA",
+      "materialGrade": "42CrMo4",
+      "heatTreatment": "Tempered 210°C",
+      "serialRange": {
+        "start": "PP-223-A-000100",
+        "end": "PP-223-A-000199"
+      },
       "measurements": {
         "torqueNm": 57.4,
         "diameterMm": 17.995,
         "surfacePorosityPct": 0.023,
         "temperatureC": 437
       },
+      "qcLimits": {
+        "torqueNmMin": 54.0,
+        "torqueNmMax": 59.0,
+        "diameterMmMin": 17.990,
+        "diameterMmMax": 18.005
+      },
       "operatorId": "OP-991",
-      "qcPass": true
+      "qcPass": true,
+      "status": "OK"
     },
     {
+      "id": 2,
       "batchId": "PISTAO-02",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
+      "productionOrder": "PO-8845-001",
       "productionDate": "2025-11-03T11:16:00Z",
       "plant": "PLANT-02",
+      "lineId": "LINE-02-A",
+      "machineId": "MC-PIN-07",
+      "shift": "A",
+      "customer": "OEM-ALPHA",
+      "materialGrade": "42CrMo4",
+      "heatTreatment": "Tempered 210°C",
+      "serialRange": {
+        "start": "PP-223-A-000200",
+        "end": "PP-223-A-000299"
+      },
       "measurements": {
         "torqueNm": 59.0,
         "diameterMm": 18.0,
         "surfacePorosityPct": 0.027,
         "temperatureC": 445
       },
+      "qcLimits": {
+        "torqueNmMin": 54.0,
+        "torqueNmMax": 59.0,
+        "diameterMmMin": 17.990,
+        "diameterMmMax": 18.005
+      },
       "operatorId": "OP-1003",
       "qcPass": false,
+      "status": "REWORK",
       "qcNotes": "torque acima do limite interno"
     },
     {
+      "id": 3,
       "batchId": "PISTAO-03",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
+      "productionOrder": "PO-8845-001",
       "productionDate": "2025-11-03T12:08:00Z",
       "plant": "PLANT-02",
+      "lineId": "LINE-02-B",
+      "machineId": "MC-PIN-08",
+      "shift": "B",
+      "customer": "OEM-ALPHA",
+      "materialGrade": "42CrMo4",
+      "heatTreatment": "Tempered 210°C",
+      "serialRange": {
+        "start": "PP-223-A-000300",
+        "end": "PP-223-A-000399"
+      },
       "measurements": {
         "torqueNm": 55.8,
         "diameterMm": 17.998,
         "surfacePorosityPct": 0.018,
         "temperatureC": 432
       },
+      "qcLimits": {
+        "torqueNmMin": 54.0,
+        "torqueNmMax": 59.0,
+        "diameterMmMin": 17.990,
+        "diameterMmMax": 18.005
+      },
       "operatorId": "OP-1003",
-      "qcPass": true
+      "qcPass": true,
+      "status": "OK"
     },
     {
+      "id": 4,
       "batchId": "PISTAO-04",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
+      "productionOrder": "PO-8845-001",
       "productionDate": "2025-11-03T12:44:00Z",
       "plant": "PLANT-02",
+      "lineId": "LINE-02-B",
+      "machineId": "MC-PIN-08",
+      "shift": "B",
+      "customer": "OEM-ALPHA",
+      "materialGrade": "42CrMo4",
+      "heatTreatment": "Tempered 210°C",
+      "serialRange": {
+        "start": "PP-223-A-000400",
+        "end": "PP-223-A-000499"
+      },
       "measurements": {
         "torqueNm": 56.9,
         "diameterMm": 17.994,
         "surfacePorosityPct": 0.02,
         "temperatureC": 439
       },
+      "qcLimits": {
+        "torqueNmMin": 54.0,
+        "torqueNmMax": 59.0,
+        "diameterMmMin": 17.990,
+        "diameterMmMax": 18.005
+      },
       "operatorId": "OP-1005",
-      "qcPass": true
+      "qcPass": true,
+      "status": "OK"
     },
     {
+      "id": 5,
       "batchId": "PISTAO-05",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
+      "productionOrder": "PO-8845-002",
       "productionDate": "2025-11-03T13:25:00Z",
       "plant": "PLANT-02",
+      "lineId": "LINE-02-C",
+      "machineId": "MC-PIN-09",
+      "shift": "B",
+      "customer": "OEM-BETA",
+      "materialGrade": "42CrMo4",
+      "heatTreatment": "Tempered 210°C",
+      "serialRange": {
+        "start": "PP-223-A-000500",
+        "end": "PP-223-A-000599"
+      },
       "measurements": {
         "torqueNm": 60.1,
         "diameterMm": 18.002,
         "surfacePorosityPct": 0.029,
         "temperatureC": 451
       },
+      "qcLimits": {
+        "torqueNmMin": 54.0,
+        "torqueNmMax": 59.0,
+        "diameterMmMin": 17.990,
+        "diameterMmMax": 18.005
+      },
       "operatorId": "OP-991",
       "qcPass": false,
+      "status": "SCRAP",
       "qcNotes": "torque elevado acima do padrão"
     },
     {
+      "id": 6,
       "batchId": "PISTAO-06",
       "component": "piston-pin",
       "supplierPartId": "PP-223-A",
+      "productionOrder": "PO-8845-002",
       "productionDate": "2025-11-03T14:10:00Z",
       "plant": "PLANT-02",
+      "lineId": "LINE-02-C",
+      "machineId": "MC-PIN-09",
+      "shift": "C",
+      "customer": "OEM-BETA",
+      "materialGrade": "42CrMo4",
+      "heatTreatment": "Tempered 210°C",
+      "serialRange": {
+        "start": "PP-223-A-000600",
+        "end": "PP-223-A-000699"
+      },
       "measurements": {
         "torqueNm": 56.3,
         "diameterMm": 17.997,
         "surfacePorosityPct": 0.019,
         "temperatureC": 440
       },
+      "qcLimits": {
+        "torqueNmMin": 54.0,
+        "torqueNmMax": 59.0,
+        "diameterMmMin": 17.990,
+        "diameterMmMax": 18.005
+      },
       "operatorId": "OP-1007",
-      "qcPass": true
+      "qcPass": true,
+      "status": "OK"
+    },
+    {
+      "id": 7,
+      "batchId": "BIELA-01",
+      "component": "connecting-rod",
+      "supplierPartId": "CR-880-B",
+      "productionOrder": "PO-8845-010",
+      "productionDate": "2025-11-04T06:50:00Z",
+      "plant": "PLANT-01",
+      "lineId": "LINE-01-A",
+      "machineId": "MC-CONROD-01",
+      "shift": "A",
+      "customer": "OEM-ALPHA",
+      "materialGrade": "C70S6",
+      "heatTreatment": "Induction hardened",
+      "serialRange": {
+        "start": "CR-880-B-010000",
+        "end": "CR-880-B-010149"
+      },
+      "measurements": {
+        "bigEndDiameterMm": 54.002,
+        "smallEndDiameterMm": 23.998,
+        "weightGrams": 625.4,
+        "balanceOffsetGrams": 0.9
+      },
+      "qcLimits": {
+        "bigEndDiameterMin": 54.000,
+        "bigEndDiameterMax": 54.010,
+        "smallEndDiameterMin": 23.990,
+        "smallEndDiameterMax": 24.010,
+        "weightMinGrams": 620.0,
+        "weightMaxGrams": 630.0
+      },
+      "operatorId": "OP-1201",
+      "qcPass": true,
+      "status": "OK"
+    },
+    {
+      "id": 8,
+      "batchId": "BIELA-02",
+      "component": "connecting-rod",
+      "supplierPartId": "CR-880-B",
+      "productionOrder": "PO-8845-010",
+      "productionDate": "2025-11-04T08:15:00Z",
+      "plant": "PLANT-01",
+      "lineId": "LINE-01-A",
+      "machineId": "MC-CONROD-01",
+      "shift": "A",
+      "customer": "OEM-ALPHA",
+      "materialGrade": "C70S6",
+      "heatTreatment": "Induction hardened",
+      "serialRange": {
+        "start": "CR-880-B-010150",
+        "end": "CR-880-B-010299"
+      },
+      "measurements": {
+        "bigEndDiameterMm": 54.012,
+        "smallEndDiameterMm": 24.015,
+        "weightGrams": 632.2,
+        "balanceOffsetGrams": 1.8
+      },
+      "qcLimits": {
+        "bigEndDiameterMin": 54.000,
+        "bigEndDiameterMax": 54.010,
+        "smallEndDiameterMin": 23.990,
+        "smallEndDiameterMax": 24.010,
+        "weightMinGrams": 620.0,
+        "weightMaxGrams": 630.0
+      },
+      "operatorId": "OP-1201",
+      "qcPass": false,
+      "status": "REWORK",
+      "qcNotes": "fora de tolerância em diâmetro de olhal menor"
+    },
+    {
+      "id": 9,
+      "batchId": "VIRABR-01",
+      "component": "crankshaft",
+      "supplierPartId": "CS-550-X",
+      "productionOrder": "PO-8845-020",
+      "productionDate": "2025-11-05T05:40:00Z",
+      "plant": "PLANT-03",
+      "lineId": "LINE-03-R1",
+      "machineId": "MC-CRANK-03",
+      "shift": "NIGHT",
+      "customer": "OEM-GAMMA",
+      "materialGrade": "38MnVS6",
+      "heatTreatment": "Nitrocarburized",
+      "serialRange": {
+        "start": "CS-550-X-000050",
+        "end": "CS-550-X-000079"
+      },
+      "measurements": {
+        "mainJournalDiameterMm": 59.996,
+        "rodJournalDiameterMm": 49.997,
+        "runoutMm": 0.012,
+        "hardnessHRC": 62
+      },
+      "qcLimits": {
+        "mainJournalMin": 59.990,
+        "mainJournalMax": 60.005,
+        "rodJournalMin": 49.990,
+        "rodJournalMax": 50.005,
+        "runoutMaxMm": 0.02,
+        "hardnessMinHRC": 60,
+        "hardnessMaxHRC": 64
+      },
+      "operatorId": "OP-3002",
+      "qcPass": true,
+      "status": "OK"
+    },
+    {
+      "id": 10,
+      "batchId": "VIRABR-02",
+      "component": "crankshaft",
+      "supplierPartId": "CS-550-X",
+      "productionOrder": "PO-8845-020",
+      "productionDate": "2025-11-05T07:10:00Z",
+      "plant": "PLANT-03",
+      "lineId": "LINE-03-R1",
+      "machineId": "MC-CRANK-03",
+      "shift": "NIGHT",
+      "customer": "OEM-GAMMA",
+      "materialGrade": "38MnVS6",
+      "heatTreatment": "Nitrocarburized",
+      "serialRange": {
+        "start": "CS-550-X-000080",
+        "end": "CS-550-X-000109"
+      },
+      "measurements": {
+        "mainJournalDiameterMm": 60.008,
+        "rodJournalDiameterMm": 50.009,
+        "runoutMm": 0.028,
+        "hardnessHRC": 59
+      },
+      "qcLimits": {
+        "mainJournalMin": 59.990,
+        "mainJournalMax": 60.005,
+        "rodJournalMin": 49.990,
+        "rodJournalMax": 50.005,
+        "runoutMaxMm": 0.02,
+        "hardnessMinHRC": 60,
+        "hardnessMaxHRC": 64
+      },
+      "operatorId": "OP-3003",
+      "qcPass": false,
+      "status": "SCRAP",
+      "qcNotes": "runout acima do limite e dureza abaixo da especificação"
     }
   ]
 }
