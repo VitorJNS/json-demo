@@ -84,63 +84,6 @@
       },
       "operatorId": "OP-1007",
       "qcPass": true
-    },
-    "PISTAO-07": {
-      "component": "piston-pin",
-      "supplierPartId": "PP-223-A",
-      "productionDate": "2025-11-03T14:45:00Z",
-      "plant": "PLANT-02",
-      "measurements": {
-        "torqueNm": 58.2,
-        "diameterMm": 17.999,
-        "surfacePorosityPct": 0.021,
-        "temperatureC": 442
-      },
-      "operatorId": "OP-1003",
-      "qcPass": true
-    },
-    "PISTAO-08": {
-      "component": "piston-pin",
-      "supplierPartId": "PP-223-A",
-      "productionDate": "2025-11-03T15:19:00Z",
-      "plant": "PLANT-02",
-      "measurements": {
-        "torqueNm": 61.5,
-        "diameterMm": 18.003,
-        "surfacePorosityPct": 0.032,
-        "temperatureC": 458
-      },
-      "operatorId": "OP-991",
-      "qcPass": false,
-      "qcNotes": "temperatura excessiva detectada"
-    },
-    "PISTAO-09": {
-      "component": "piston-pin",
-      "supplierPartId": "PP-223-A",
-      "productionDate": "2025-11-03T15:58:00Z",
-      "plant": "PLANT-02",
-      "measurements": {
-        "torqueNm": 57.1,
-        "diameterMm": 17.996,
-        "surfacePorosityPct": 0.022,
-        "temperatureC": 438
-      },
-      "operatorId": "OP-1005",
-      "qcPass": true
-    },
-    "PISTAO-10": {
-      "component": "piston-pin",
-      "supplierPartId": "PP-223-A",
-      "productionDate": "2025-11-03T16:32:00Z",
-      "plant": "PLANT-02",
-      "measurements": {
-        "torqueNm": 58.6,
-        "diameterMm": 17.998,
-        "surfacePorosityPct": 0.025,
-        "temperatureC": 443
-      },
-      "operatorId": "OP-1007",
-      "qcPass": true
     }
   }
 }
